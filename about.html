@@ -1,0 +1,126 @@
+<!-- ======================================================================= -->
+<!-- FILE: about.html                                                        -->
+<!-- ======================================================================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Maupio Graphic Design. Our mission, our vision, and the creative team in Randburg dedicated to bringing your brand's story to life.">
+    <title>About Us | Maupio Graphic Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bg-primary-blue { background-color: #0033A0; }
+        .text-primary-blue { color: #0033A0; }
+        .border-primary-blue { border-color: #0033A0; }
+        .bg-accent-yellow { background-color: #FDBA12; }
+        .text-accent-yellow { color: #FDBA12; }
+        .bg-deep-navy { background-color: #0A0E2A; }
+        .text-deep-navy { color: #0A0E2A; }
+        .bg-cloud-white { background-color: #F4F7FA; }
+        .text-cloud-white { color: #F4F7FA; }
+        .bg-slate-gray { background-color: #5F6A7D; }
+        .text-slate-gray { color: #5F6A7D; }
+        .transition-all-smooth { transition: all 0.3s ease-in-out; }
+    </style>
+</head>
+<body class="bg-cloud-white text-slate-gray antialiased">
+
+    <!-- Header -->
+    <header id="header" class="bg-deep-navy sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-cloud-white">Maupio<span class="text-accent-yellow">.</span></a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-cloud-white hover:text-accent-yellow transition-all-smooth">Home</a>
+                <a href="services.html" class="text-cloud-white hover:text-accent-yellow transition-all-smooth">Services</a>
+                <a href="portfolio.html" class="text-cloud-white hover:text-accent-yellow transition-all-smooth">Portfolio</a>
+                <a href="about.html" class="text-accent-yellow font-bold transition-all-smooth">About</a>
+                <a href="contact.html" class="bg-primary-blue text-white px-5 py-2 rounded-lg font-semibold hover:opacity-90 transition-all-smooth">Contact Us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-cloud-white"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg></button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-deep-navy/95">
+            <a href="index.html" class="block py-3 px-6 text-cloud-white hover:bg-primary-blue transition-all-smooth">Home</a>
+            <a href="services.html" class="block py-3 px-6 text-cloud-white hover:bg-primary-blue transition-all-smooth">Services</a>
+            <a href="portfolio.html" class="block py-3 px-6 text-cloud-white hover:bg-primary-blue transition-all-smooth">Portfolio</a>
+            <a href="about.html" class="block py-3 px-6 text-cloud-white bg-primary-blue transition-all-smooth">About</a>
+            <a href="contact.html" class="block py-3 px-6 text-cloud-white hover:bg-primary-blue transition-all-smooth">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="bg-deep-navy text-center py-20">
+            <h1 class="text-4xl md:text-5xl font-bold text-cloud-white">We Are Your Creative Partners</h1>
+            <p class="text-lg text-slate-300 mt-2">Design driven by passion and partnership.</p>
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="py-20 md:py-28">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://source.unsplash.com/800x600/?studio,office" alt="Maupio Design Studio" class="rounded-lg shadow-xl">
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-deep-navy mb-4">Our Story</h2>
+                        <p class="text-lg mb-4">Founded in the heart of Randburg, Maupio Graphic Design was born from a desire to help businesses in our community and beyond build truly impactful brands. We saw a need for a design partner that wasn't just a service provider, but a genuine collaborator invested in client success.</p>
+                        <p class="text-lg">We believe that great design is a conversation. It's about understanding your vision, your audience, and your goals to create a visual identity that is not only beautiful but also strategically effective. Our mission is to combine professionalism and trust with a spark of innovation to deliver results that help you thrive.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Mission & Vision -->
+        <section class="bg-white py-20 md:py-28">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <div class="grid md:grid-cols-2 gap-10 text-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-primary-blue mb-3">Our Mission</h3>
+                        <p>To empower businesses with exceptional visual design that clarifies their message, captivates their audience, and accelerates their growth.</p>
+                    </div>
+                     <div>
+                        <h3 class="text-2xl font-bold text-primary-blue mb-3">Our Vision</h3>
+                        <p>To be the leading graphic design studio in Gauteng, recognized for our creative excellence, strategic approach, and unwavering commitment to our clients' success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer (Same as index.html) -->
+    <footer class="bg-deep-navy border-t border-slate-800">
+        <div class="container mx-auto px-6 py-8 text-center text-slate-400">
+             <div class="flex justify-center space-x-6 mb-4">
+                 <a href="services.html" class="hover:text-accent-yellow transition-all-smooth">Services</a>
+                 <a href="portfolio.html" class="hover:text-accent-yellow transition-all-smooth">Portfolio</a>
+                 <a href="about.html" class="hover:text-accent-yellow transition-all-smooth">About</a>
+                 <a href="contact.html" class="hover:text-accent-yellow transition-all-smooth">Contact</a>
+            </div>
+            <p>&copy; 2024 Maupio Graphic Design. All Rights Reserved. | Designed in Randburg, South Africa.</p>
+        </div>
+    </footer>
+    <script>
+        (function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

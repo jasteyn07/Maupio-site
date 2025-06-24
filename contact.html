@@ -1,0 +1,153 @@
+<!-- ======================================================================= -->
+<!-- FILE: contact.html                                                      -->
+<!-- ======================================================================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Maupio Graphic Design in Randburg for a free consultation. Let's discuss your project and how we can help your business grow.">
+    <title>Contact Us | Maupio Graphic Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bg-primary-blue { background-color: #0033A0; }
+        .text-primary-blue { color: #0033A0; }
+        .border-primary-blue { border-color: #0033A0; }
+        .bg-accent-yellow { background-color: #FDBA12; }
+        .text-accent-yellow { color: #FDBA12; }
+        .bg-deep-navy { background-color: #0A0E2A; }
+        .text-deep-navy { color: #0A0E2A; }
+        .bg-cloud-white { background-color: #F4F7FA; }
+        .text-cloud-white { color: #F4F7FA; }
+        .bg-slate-gray { background-color: #5F6A7D; }
+        .text-slate-gray { color: #5F6A7D; }
+        .transition-all-smooth { transition: all 0.3s ease-in-out; }
+    </style>
+</head>
+<body class="bg-cloud-white text-slate-gray antialiased">
+
+    <!-- Header -->
+    <header id="header" class="bg-deep-navy sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-cloud-white">Maupio<span class="text-accent-yellow">.</span></a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-cloud-white hover:text-accent-yellow transition-all-smooth">Home</a>
+                <a href="services.html" class="text-cloud-white hover:text-accent-yellow transition-all-smooth">Services</a>
+                <a href="portfolio.html" class="text-cloud-white hover:text-accent-yellow transition-all-smooth">Portfolio</a>
+                <a href="about.html" class="text-cloud-white hover:text-accent-yellow transition-all-smooth">About</a>
+                <a href="contact.html" class="bg-primary-blue text-white px-5 py-2 rounded-lg font-semibold hover:opacity-90 transition-all-smooth">Contact Us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-cloud-white"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg></button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-deep-navy/95">
+            <a href="index.html" class="block py-3 px-6 text-cloud-white hover:bg-primary-blue transition-all-smooth">Home</a>
+            <a href="services.html" class="block py-3 px-6 text-cloud-white hover:bg-primary-blue transition-all-smooth">Services</a>
+            <a href="portfolio.html" class="block py-3 px-6 text-cloud-white hover:bg-primary-blue transition-all-smooth">Portfolio</a>
+            <a href="about.html" class="block py-3 px-6 text-cloud-white hover:bg-primary-blue transition-all-smooth">About</a>
+            <a href="contact.html" class="block py-3 px-6 text-cloud-white bg-primary-blue transition-all-smooth">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="bg-deep-navy text-center py-20">
+            <h1 class="text-4xl md:text-5xl font-bold text-cloud-white">Let's Create Together</h1>
+            <p class="text-lg text-slate-300 mt-2">Have a project in mind? We'd love to hear about it.</p>
+        </section>
+
+        <!-- Contact Form & Details Section -->
+        <section class="py-20 md:py-28">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-16">
+                    <!-- Contact Form -->
+                    <div>
+                         <h2 class="text-3xl font-bold text-deep-navy mb-6">Send Us a Message</h2>
+                         <!-- Note: This form is for display only. It requires a backend service to actually send emails. -->
+                        <form action="#" method="POST" class="space-y-6">
+                            <div>
+                                <label for="name" class="sr-only">Full Name</label>
+                                <input type="text" name="name" id="name" placeholder="Full Name" required class="w-full px-4 py-3 rounded-lg bg-white border border-slate-300 focus:ring-primary-blue focus:border-primary-blue transition-all-smooth">
+                            </div>
+                            <div>
+                                <label for="email" class="sr-only">Email Address</label>
+                                <input type="email" name="email" id="email" placeholder="Email Address" required class="w-full px-4 py-3 rounded-lg bg-white border border-slate-300 focus:ring-primary-blue focus:border-primary-blue transition-all-smooth">
+                            </div>
+                            <div>
+                                <label for="service" class="sr-only">Service of Interest</label>
+                                <select id="service" name="service" class="w-full px-4 py-3 rounded-lg bg-white border border-slate-300 focus:ring-primary-blue focus:border-primary-blue transition-all-smooth">
+                                    <option>Service of Interest</option>
+                                    <option>Branding & Identity</option>
+                                    <option>Web & UI/UX Design</option>
+                                    <option>Print & Marketing</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="sr-only">Message</label>
+                                <textarea name="message" id="message" rows="5" placeholder="Tell us about your project..." required class="w-full px-4 py-3 rounded-lg bg-white border border-slate-300 focus:ring-primary-blue focus:border-primary-blue transition-all-smooth"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full bg-primary-blue text-white px-8 py-3 rounded-lg font-bold text-lg hover:opacity-90 transition-all-smooth">Get Free Consultation</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Contact Details & Map -->
+                    <div>
+                        <h2 class="text-3xl font-bold text-deep-navy mb-6">Contact Details</h2>
+                        <div class="space-y-4 text-lg">
+                            <p><strong>Location:</strong> Randburg, Gauteng, South Africa</p>
+                            <p><strong>Email:</strong> <a href="mailto:hello@maupio.co.za" class="text-primary-blue hover:underline">hello@maupio.co.za</a></p>
+                            <p><strong>Phone:</strong> <a href="tel:+27111234567" class="text-primary-blue hover:underline">(011) 123-4567</a></p>
+                            <p><strong>Business Hours:</strong> Monday - Friday, 9:00 AM - 5:00 PM</p>
+                        </div>
+                        <div class="mt-8">
+                            <h3 class="text-2xl font-bold text-deep-navy mb-4">Find Us</h3>
+                            <!-- Google Maps Embed Placeholder - Replace with your actual Google Maps embed code -->
+                            <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden border">
+                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114674.83983377226!2d27.92628479521361!3d-26.09033355835978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e957474c5835261%3A0x4a433b5103a85a41!2sRandburg!5e0!3m2!1sen!2sza!4v1687802146521!5m2!1sen!2sza" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer (Same as index.html) -->
+    <footer class="bg-deep-navy border-t border-slate-800">
+        <div class="container mx-auto px-6 py-8 text-center text-slate-400">
+             <div class="flex justify-center space-x-6 mb-4">
+                 <a href="services.html" class="hover:text-accent-yellow transition-all-smooth">Services</a>
+                 <a href="portfolio.html" class="hover:text-accent-yellow transition-all-smooth">Portfolio</a>
+                 <a href="about.html" class="hover:text-accent-yellow transition-all-smooth">About</a>
+                 <a href="contact.html" class="hover:text-accent-yellow transition-all-smooth">Contact</a>
+            </div>
+            <p>&copy; 2024 Maupio Graphic Design. All Rights Reserved. | Designed in Randburg, South Africa.</p>
+        </div>
+    </footer>
+    <script>
+        (function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

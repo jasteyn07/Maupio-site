@@ -1,0 +1,164 @@
+<!-- ======================================================================= -->
+<!-- FILE: portfolio.html                                                    -->
+<!-- ======================================================================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View the graphic design portfolio of Maupio. See our work in branding, web design, and print for clients in Johannesburg, Gauteng and across South Africa.">
+    <title>Portfolio | Maupio Graphic Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bg-primary-blue { background-color: #0033A0; }
+        .text-primary-blue { color: #0033A0; }
+        .border-primary-blue { border-color: #0033A0; }
+        .bg-accent-yellow { background-color: #FDBA12; }
+        .text-accent-yellow { color: #FDBA12; }
+        .bg-deep-navy { background-color: #0A0E2A; }
+        .text-deep-navy { color: #0A0E2A; }
+        .bg-cloud-white { background-color: #F4F7FA; }
+        .text-cloud-white { color: #F4F7FA; }
+        .bg-slate-gray { background-color: #5F6A7D; }
+        .text-slate-gray { color: #5F6A7D; }
+        .transition-all-smooth { transition: all 0.3s ease-in-out; }
+    </style>
+</head>
+<body class="bg-cloud-white text-slate-gray antialiased">
+
+    <!-- Header -->
+    <header id="header" class="bg-deep-navy sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-cloud-white">Maupio<span class="text-accent-yellow">.</span></a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-cloud-white hover:text-accent-yellow transition-all-smooth">Home</a>
+                <a href="services.html" class="text-cloud-white hover:text-accent-yellow transition-all-smooth">Services</a>
+                <a href="portfolio.html" class="text-accent-yellow font-bold transition-all-smooth">Portfolio</a>
+                <a href="about.html" class="text-cloud-white hover:text-accent-yellow transition-all-smooth">About</a>
+                <a href="contact.html" class="bg-primary-blue text-white px-5 py-2 rounded-lg font-semibold hover:opacity-90 transition-all-smooth">Contact Us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-cloud-white"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg></button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-deep-navy/95">
+            <a href="index.html" class="block py-3 px-6 text-cloud-white hover:bg-primary-blue transition-all-smooth">Home</a>
+            <a href="services.html" class="block py-3 px-6 text-cloud-white hover:bg-primary-blue transition-all-smooth">Services</a>
+            <a href="portfolio.html" class="block py-3 px-6 text-cloud-white bg-primary-blue transition-all-smooth">Portfolio</a>
+            <a href="about.html" class="block py-3 px-6 text-cloud-white hover:bg-primary-blue transition-all-smooth">About</a>
+            <a href="contact.html" class="block py-3 px-6 text-cloud-white hover:bg-primary-blue transition-all-smooth">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="bg-deep-navy text-center py-20">
+            <h1 class="text-4xl md:text-5xl font-bold text-cloud-white">Our Work</h1>
+            <p class="text-lg text-slate-300 mt-2">Take a look at some of the brands we've helped build and transform.</p>
+        </section>
+
+        <!-- Portfolio Grid Section -->
+        <section class="py-20 md:py-28">
+            <div class="container mx-auto px-6">
+                <!-- Portfolio Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Portfolio Item 1 -->
+                    <a href="#" class="group block rounded-lg overflow-hidden relative">
+                        <img src="https://source.unsplash.com/600x400/?branding,logo" alt="Portfolio project 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-deep-navy/80 to-transparent flex items-end">
+                            <div class="p-6 text-white">
+                                <h3 class="font-bold text-xl">Corporate Rebrand</h3>
+                                <p class="text-sm opacity-90">Branding & Identity</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Portfolio Item 2 -->
+                    <a href="#" class="group block rounded-lg overflow-hidden relative">
+                        <img src="https://source.unsplash.com/600x400/?website,ui" alt="Portfolio project 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                         <div class="absolute inset-0 bg-gradient-to-t from-deep-navy/80 to-transparent flex items-end">
+                            <div class="p-6 text-white">
+                                <h3 class="font-bold text-xl">E-Commerce Website</h3>
+                                <p class="text-sm opacity-90">Web Design</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Portfolio Item 3 -->
+                    <a href="#" class="group block rounded-lg overflow-hidden relative">
+                        <img src="https://source.unsplash.com/600x400/?packaging,box" alt="Portfolio project 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                         <div class="absolute inset-0 bg-gradient-to-t from-deep-navy/80 to-transparent flex items-end">
+                            <div class="p-6 text-white">
+                                <h3 class="font-bold text-xl">Packaging Design</h3>
+                                <p class="text-sm opacity-90">Print & Marketing</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Portfolio Item 4 -->
+                    <a href="#" class="group block rounded-lg overflow-hidden relative">
+                        <img src="https://source.unsplash.com/600x400/?mobile,app" alt="Portfolio project 4" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                         <div class="absolute inset-0 bg-gradient-to-t from-deep-navy/80 to-transparent flex items-end">
+                            <div class="p-6 text-white">
+                                <h3 class="font-bold text-xl">Mobile App UI/UX</h3>
+                                <p class="text-sm opacity-90">Web & UI/UX Design</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Portfolio Item 5 -->
+                    <a href="#" class="group block rounded-lg overflow-hidden relative">
+                        <img src="https://source.unsplash.com/600x400/?startup,tech" alt="Portfolio project 5" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                         <div class="absolute inset-0 bg-gradient-to-t from-deep-navy/80 to-transparent flex items-end">
+                            <div class="p-6 text-white">
+                                <h3 class="font-bold text-xl">Startup Logo</h3>
+                                <p class="text-sm opacity-90">Branding & Identity</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Portfolio Item 6 -->
+                    <a href="#" class="group block rounded-lg overflow-hidden relative">
+                        <img src="https://source.unsplash.com/600x400/?brochure,print" alt="Portfolio project 6" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                         <div class="absolute inset-0 bg-gradient-to-t from-deep-navy/80 to-transparent flex items-end">
+                            <div class="p-6 text-white">
+                                <h3 class="font-bold text-xl">Company Brochure</h3>
+                                <p class="text-sm opacity-90">Print & Marketing</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer (Same as index.html) -->
+    <footer class="bg-deep-navy border-t border-slate-800">
+        <div class="container mx-auto px-6 py-8 text-center text-slate-400">
+             <div class="flex justify-center space-x-6 mb-4">
+                 <a href="services.html" class="hover:text-accent-yellow transition-all-smooth">Services</a>
+                 <a href="portfolio.html" class="hover:text-accent-yellow transition-all-smooth">Portfolio</a>
+                 <a href="about.html" class="hover:text-accent-yellow transition-all-smooth">About</a>
+                 <a href="contact.html" class="hover:text-accent-yellow transition-all-smooth">Contact</a>
+            </div>
+            <p>&copy; 2024 Maupio Graphic Design. All Rights Reserved. | Designed in Randburg, South Africa.</p>
+        </div>
+    </footer>
+    <script>
+        (function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
